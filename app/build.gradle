@@ -11,8 +11,16 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+
+        debug{
+            minifyEnabled false
+            buildConfigField "String", "BASE_URL", "\"http:www.example.com/\""
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
         release {
             minifyEnabled false
+            buildConfigField "String", "BASE_URL", "\"http:www.example.com/\""
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
