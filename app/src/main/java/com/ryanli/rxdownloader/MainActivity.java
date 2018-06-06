@@ -1,11 +1,11 @@
-package com.ysyy.rxdownloader;
+package com.ryanli.rxdownloader;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
-import com.ysyy.rxdownloader.data.retrofit.RetrofitProvider;
-import com.ysyy.rxdownloader.data.retrofit.httpapis.DownloadApi;
+import com.ryanli.rxdownloader.data.retrofit.RetrofitProvider;
+import com.ryanli.rxdownloader.data.retrofit.httpapis.DownloadApi;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;

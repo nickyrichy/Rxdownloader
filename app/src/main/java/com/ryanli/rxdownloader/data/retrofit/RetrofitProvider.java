@@ -1,7 +1,7 @@
-package com.ysyy.rxdownloader.data.retrofit;
+package com.ryanli.rxdownloader.data.retrofit;
 
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
-import com.ysyy.rxdownloader.BuildConfig;
+import com.ryanli.rxdownloader.BuildConfig;
 
 import java.util.concurrent.TimeUnit;
 
@@ -10,7 +10,7 @@ import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-import static com.ysyy.rxdownloader.BuildConfig.BASE_URL;
+import static com.ryanli.rxdownloader.BuildConfig.BASE_URL;
 
 /**
  * Auther: RyanLi

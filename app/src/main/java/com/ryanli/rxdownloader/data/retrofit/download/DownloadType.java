@@ -1,4 +1,4 @@
-package com.ysyy.rxdownloader.data.retrofit.download;
+package com.ryanli.rxdownloader.data.retrofit.download;
 
 /**
  * Auther: RyanLi

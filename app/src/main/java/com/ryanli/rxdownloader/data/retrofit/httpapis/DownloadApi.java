@@ -1,4 +1,4 @@
-package com.ysyy.rxdownloader.data.retrofit.httpapis;
+package com.ryanli.rxdownloader.data.retrofit.httpapis;
 
 import io.reactivex.Observable;
 import okhttp3.ResponseBody;
