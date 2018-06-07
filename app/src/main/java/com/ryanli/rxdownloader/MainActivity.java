@@ -1,4 +1,4 @@
-package com.ysyy.rxdownloader;
+package com.ryanli.rxdownloader;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.widget.Toast;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 import com.ysyy.rxdownloader.data.retrofit.download.DownloadType;
+import com.ryanli.rxdownloader.data.retrofit.RetrofitProvider;
+import com.ryanli.rxdownloader.data.retrofit.httpapis.DownloadApi;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;

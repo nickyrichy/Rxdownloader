@@ -1,4 +1,4 @@
-package com.ysyy.rxdownloader.data.retrofit.download;
+package com.ryanli.rxdownloader.data.retrofit.download;
 
 import com.ysyy.rxdownloader.data.retrofit.RetrofitProvider;
 import com.ysyy.rxdownloader.data.retrofit.httpapis.DownloadApi;
