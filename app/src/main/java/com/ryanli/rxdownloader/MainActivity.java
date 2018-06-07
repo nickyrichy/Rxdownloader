@@ -6,9 +6,9 @@ import android.widget.Toast;
 
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
-import com.ysyy.rxdownloader.data.retrofit.download.DownloadType;
-import com.ryanli.rxdownloader.data.retrofit.RetrofitProvider;
-import com.ryanli.rxdownloader.data.retrofit.httpapis.DownloadApi;
+import com.ryanli.rxdownloader.data.db.DbOpenHelper;
+import com.ryanli.rxdownloader.data.db.DownloadRecordTable;
+import com.ryanli.rxdownloader.data.retrofit.download.DownloadType;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Logger.addLogAdapter(new AndroidLogAdapter());
+
+        DbOpenHelper.getInstance(this).getReadableDatabase();
 //        String lengthCorrectUrl = "http://image5.tuku.cn/pic/wallpaper/fengjing/qiutiandehu/004.jpg";
 //        disposable = RetrofitProvider.getInstance().create(DownloadApi.class).download(null, lengthCorrectUrl)
 //                .subscribeOn(Schedulers.io())

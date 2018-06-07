@@ -1,8 +1,8 @@
 package com.ryanli.rxdownloader.data.retrofit.download;
 
-import com.ysyy.rxdownloader.data.retrofit.RetrofitProvider;
-import com.ysyy.rxdownloader.data.retrofit.httpapis.DownloadApi;
-import com.ysyy.rxdownloader.data.utils.LogUtils;
+import com.ryanli.rxdownloader.data.retrofit.RetrofitProvider;
+import com.ryanli.rxdownloader.data.retrofit.httpapis.DownloadApi;
+import com.ryanli.rxdownloader.data.utils.LogUtils;
 
 import org.reactivestreams.Publisher;
 import org.reactivestreams.Subscription;

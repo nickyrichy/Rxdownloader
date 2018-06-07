@@ -10,25 +10,23 @@ import java.util.Map;
  * Data: 2018-06-07 12:19
  * Description: 下载记录数据库表
  */
-public class DownloadRecordTable extends BaseTable {
+public class DownloadRecordTable1 extends BaseTable {
 
-    public static final String TABLE_NAME = "download_record";//表名
+    public static final String TABLE_NAME = "download_record1";//表名
 
     private static Map<String, String> paramsMap = new HashMap<>();
 
     static {
-        DbOpenHelper.TABLES.add(DownloadRecordTable.class.getName());
         paramsMap.put("save_name", "text");
         paramsMap.put("savePath", "text");
         paramsMap.put("date", "INTEGER NOT NULL");
         paramsMap.put(_ID, "integer primary key autoincrement");
     }
 
-    public DownloadRecordTable() {
-
+    public DownloadRecordTable1() {
     }
 
-    public DownloadRecordTable(Context context) {
+    public DownloadRecordTable1(Context context) {
         super(context);
     }
 

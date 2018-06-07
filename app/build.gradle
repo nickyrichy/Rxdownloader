@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.ysyy.rxdownloader"
+        applicationId "com.ryanli.rxdownloader"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
@@ -15,12 +15,16 @@ android {
         debug{
             minifyEnabled false
             buildConfigField "String", "BASE_URL", "\"http:www.example.com/\""
+            buildConfigField "String", "DB_NAME", "\"ryanli_rxdownloader.db\""
+            buildConfigField "Integer", "DB_VERSION", "1"
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
         release {
             minifyEnabled false
             buildConfigField "String", "BASE_URL", "\"http:www.example.com/\""
+            buildConfigField "Integer", "DB_VERSION", "1"
+            buildConfigField "String", "DB_NAME", "\"ryanli_rxdownloader.db\""
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }

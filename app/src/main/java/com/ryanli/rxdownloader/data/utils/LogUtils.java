@@ -1,7 +1,7 @@
-package com.ysyy.rxdownloader.data.utils;
+package com.ryanli.rxdownloader.data.utils;
 
 import com.orhanobut.logger.Logger;
-import com.ysyy.rxdownloader.BuildConfig;
+import com.ryanli.rxdownloader.BuildConfig;
 
 /**
  * Auther: RyanLi
