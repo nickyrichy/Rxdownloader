@@ -2,20 +2,11 @@ package com.ryanli.rxdownloader;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
-import com.ryanli.rxdownloader.data.db.DbOpenHelper;
-import com.ryanli.rxdownloader.data.db.DownloadRecordTable;
-import com.ryanli.rxdownloader.data.retrofit.download.DownloadType;
 
-import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
-import io.reactivex.functions.Consumer;
-import io.reactivex.schedulers.Schedulers;
-import okhttp3.ResponseBody;
-import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,28 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Logger.addLogAdapter(new AndroidLogAdapter());
 
-        DbOpenHelper.getInstance(this).getReadableDatabase();
-//        String lengthCorrectUrl = "http://image5.tuku.cn/pic/wallpaper/fengjing/qiutiandehu/004.jpg";
-//        disposable = RetrofitProvider.getInstance().create(DownloadApi.class).download(null, lengthCorrectUrl)
-//                .subscribeOn(Schedulers.io())
-//                .observeOn(AndroidSchedulers.mainThread())
-//                .subscribe(new Consumer<Response<ResponseBody>>() {
-//                    @Override
-//                    public void accept(Response<ResponseBody> responseBodyResponse) throws Exception {
-//                        Toast.makeText(MainActivity.this, responseBodyResponse.body().contentLength() + "", Toast.LENGTH_SHORT).show();
-//                    }
-//                });
 
-        DownloadType.NormalDownload normalDownload = new DownloadType.NormalDownload();
-        normalDownload.startDownload()
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<Response<ResponseBody>>() {
-                    @Override
-                    public void accept(Response<ResponseBody> responseBodyResponse) throws Exception {
-                        Toast.makeText(MainActivity.this, responseBodyResponse.body().contentLength() + "", Toast.LENGTH_SHORT).show();
-                    }
-                });
     }
 
     @Override

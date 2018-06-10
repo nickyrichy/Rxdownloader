@@ -1,4 +1,4 @@
-package com.ysyy.rxdownloader;
+package com.ryanli.rxdownloader;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 import static org.junit.Assert.*;
 
 /**
- * Instrumented test, which will execute on an Android device.
+ * Instrumented test, which will create on an Android device.
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
