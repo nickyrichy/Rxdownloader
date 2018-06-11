@@ -1,7 +1,5 @@
 package com.ryanli.rxdownloader.data.entity;
 
-import com.ryanli.rxdownloader.data.db.annotation.Column;
-import com.ryanli.rxdownloader.data.db.annotation.PrimaryKey;
 import com.ryanli.rxdownloader.data.db.annotation.Table;
 
 /**
@@ -12,14 +10,9 @@ import com.ryanli.rxdownloader.data.db.annotation.Table;
 @Table
 public class DownloadRecordEntity {
 
-    @Column
-    private String url = "地址";
-    @Column
-    private String saveName = "名字";
-    @Column
-    private String savePath = "路径";
-    @PrimaryKey
-    @Column
+    private String url;
+    private String saveName;
+    private String savePath;
     private long date; //格林威治时间,毫秒
     private String missionId;
 
